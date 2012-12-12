@@ -15,45 +15,47 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoVersal.Markdown.Markdow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoVersal.Markdown.MarkdownSharp.MT", "MonoVersal.Markdown.MarkdownSharp.MT\MonoVersal.Markdown.MarkdownSharp.MT.csproj", "{0152A30B-26E4-42F1-89C7-9A63713EB86B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeC1CMS", "CompositeC1CMS", "{D8AA4F42-444B-4B44-B122-C8F33C9F9057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0120C066-2955-4343-8F05-F487518F190D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0120C066-2955-4343-8F05-F487518F190D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0120C066-2955-4343-8F05-F487518F190D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0120C066-2955-4343-8F05-F487518F190D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37619116-CCE8-465A-8B1F-081CA53364BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37619116-CCE8-465A-8B1F-081CA53364BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37619116-CCE8-465A-8B1F-081CA53364BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37619116-CCE8-465A-8B1F-081CA53364BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F76D227-9B91-475B-9B64-B7A3D0EE7E3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FBEF400-640C-4F23-A948-2DC896AFD4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FBEF400-640C-4F23-A948-2DC896AFD4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FBEF400-640C-4F23-A948-2DC896AFD4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FBEF400-640C-4F23-A948-2DC896AFD4D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD0903F1-54BE-4573-B1AD-D8AA180F9698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD0903F1-54BE-4573-B1AD-D8AA180F9698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD0903F1-54BE-4573-B1AD-D8AA180F9698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD0903F1-54BE-4573-B1AD-D8AA180F9698}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MonoVersal.Markdown.MarkdownSharp.WF\MonoVersal.Markdown.MarkdownSharp.WF.csproj
+		{0120C066-2955-4343-8F05-F487518F190D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0120C066-2955-4343-8F05-F487518F190D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0120C066-2955-4343-8F05-F487518F190D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0120C066-2955-4343-8F05-F487518F190D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F784961-BDDA-4A2F-A89E-CCEB35DBE6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0152A30B-26E4-42F1-89C7-9A63713EB86B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MonoVersal.Markdown.MarkdownSharp.WF\MonoVersal.Markdown.MarkdownSharp.WF.csproj
 	EndGlobalSection
 EndGlobal

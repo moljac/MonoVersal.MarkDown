@@ -164,7 +164,7 @@ namespace MarkdownSharp
 			}
 			else
 			{
-				this.ConfigurationMAnagerAppSettings();
+				this.ConfigurationManagerAppSettings();
 			}
 
 			return;

@@ -79,7 +79,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Markdown.ConfigurationManager.WF.cs" />
+    <Compile Include="Markdown.ConfigurationManager.WF.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Markdown.cs">
       <SubType>Code</SubType>
     </Compile>

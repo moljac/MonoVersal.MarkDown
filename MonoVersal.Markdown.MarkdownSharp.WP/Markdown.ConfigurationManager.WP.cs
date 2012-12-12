@@ -98,7 +98,7 @@ namespace MarkdownSharp
 	/// </summary>
 	public partial class Markdown
 	{
-		private void ConfigurationMAnagerAppSettings()
+		private void ConfigurationManagerAppSettings()
 		{
 			/*
 			 * TODO: LoadSettings!

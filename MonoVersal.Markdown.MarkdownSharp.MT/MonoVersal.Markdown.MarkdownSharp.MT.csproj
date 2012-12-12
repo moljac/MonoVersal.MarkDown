@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <ProjectGuid>{0152A30B-26E4-42F1-89C7-9A63713EB86B}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoVersal.Markdown.MarkdownSharp.MT</RootNamespace>
+    <RootNamespace>MonoVersal.Markdown.MarkdownSharp</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>MonoVersal.Markdown.MarkdownSharp.MT</AssemblyName>
   </PropertyGroup>
@@ -36,5 +36,16 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MonoVersal.Markdown.MarkdownSharp.WF\Markdown.cs">
+      <Link>Markdown.cs</Link>
+    </Compile>
+    <Compile Include="Markdown.ConfigurationManager.MT.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\.WF.cs;\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="37619116-cce8-465a-8b1f-081ca53364bb" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
