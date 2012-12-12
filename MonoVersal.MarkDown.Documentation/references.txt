@@ -1,0 +1,13 @@
+﻿URLS
+	General knowledge
+		http://daringfireball.net/projects/markdown/syntax
+
+	MarkdownSharp
+		http://blog.stackoverflow.com/2009/12/introducing-markdownsharp/
+		http://code.google.com/p/markdownsharp/
+	MarkDownDeep
+		https://github.com/toptensoftware/markdowndeep
+	MarkDown.NET
+		http://aspnetresources.com/blog/markdown_announced	
+	Other
+		http://www.lowerelement.com/Geekery/XML/XHTML-to-Markdown.html
