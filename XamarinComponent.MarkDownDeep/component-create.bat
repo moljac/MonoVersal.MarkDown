@@ -2,14 +2,10 @@
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
 
-
-
 set MONO="%PROGRAMFILES%\Mono-3.0.9\bin\mono.exe"
 ::set XPKG=bin.apps\xpkg\xpkg.exe
 set XPKG=bin.apps\xpkg\xamarin-component.exe
 set RAKE=C:\bin\Ruby200\bin\rake
-
-call .\compile.bat
 
 :: rake downloads xpkg and runs:
 
@@ -25,6 +21,8 @@ set SAMPLES=^
 	
 :: http://www.dostips.com/DtTipsStringManipulation.php
 :: 
+
+call .\compile.bat
 
 echo ===========================================================================
 echo copying assemblies

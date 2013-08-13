@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{73803E0C-B88C-423E-9DF9-C3AD6ADB0F01}</ProjectGuid>
+    <ProjectGuid>{7995FA8B-C477-40E7-BCB8-E901CE747268}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>XSample.MarkDownDeep.XI</RootNamespace>
@@ -88,6 +88,9 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\XSample.MarkDownSharp.XA\BusinessLogicObjects\BusinessLogicObject.cs">
+      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MainViewController.cs" />
@@ -109,6 +112,12 @@
     <InterfaceDefinition Include="FlipsideViewController.xib" />
     <InterfaceDefinition Include="MarkUpController_iPhone.xib" />
     <InterfaceDefinition Include="MarkUpController_iPad.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonoVersal.Markdown.MarkdownSharp.XI\MonoVersal.Markdown.MarkdownSharp.XI.csproj">
+      <Project>{0152A30B-26E4-42F1-89C7-9A63713EB86B}</Project>
+      <Name>MonoVersal.Markdown.MarkdownSharp.XI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
