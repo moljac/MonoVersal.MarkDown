@@ -102,7 +102,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

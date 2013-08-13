@@ -65,6 +65,9 @@
     <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\MardownDeep.cs">
       <Link>MardownDeep.cs</Link>
     </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\patches\System.Drawing\Image.cs">
+      <Link>patches\System.Drawing\Image.cs</Link>
+    </Compile>
     <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\patches\System\StringExtensions.cs">
       <Link>patches\System\StringExtensions.cs</Link>
     </Compile>
@@ -86,13 +89,11 @@
     <Compile Include="MarkdownDeep.WF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="patches\System.Drawing\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" />
+      <UserProperties ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
