@@ -27,12 +27,12 @@ namespace System.Drawing
 		/// </summary>
 		/// <param name="str"></param>
 		/// <returns></returns>
-		internal static CGBitmap FromFile(string str)
+		internal static MonoTouch.CoreGraphics.CGBitmapContext FromFile(string str)
 		{
 			// Android.Graphics.Bitmap bitmap = 
 			// 	Android.Graphics.BitmapFactory.DecodeStream(context.OpenFileInput(string));
 
-			return default(Android.Graphics.Bitmap);
+			return default(MonoTouch.CoreGraphics.CGBitmapContext);
 		}
 	}
 }
