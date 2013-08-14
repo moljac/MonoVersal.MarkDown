@@ -34,6 +34,8 @@ namespace XSample.MarkDownDeep.XI
 			button_markup.Clicked += HandleClicked;
 			this.NavigationItem.RightBarButtonItem = button_markup; 
 
+            textViewMarkDown.Text = BusinessLogicObject.MarkDown;
+            
 			return;
 		}
 

@@ -34,15 +34,15 @@ namespace XSample.MarkDownDeep.XI
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 
-			webViewMarkUp.LoadHtmlString(BusinessLogicObject.MarkUpHTML, null);
-
 			return;
 		}
-		
-		
-		 public override void ViewWillAppear (bool animated)
-		{        
-		}
+			
+		 public override void ViewWillAppear(bool animated)
+        {        
+            webViewMarkUp.LoadHtmlString(BusinessLogicObject.MarkUpHTML, null);
+
+            return;
+        }
 
 		void HandleTouchUpInside (object sender, EventArgs e)
 		{
