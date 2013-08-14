@@ -37,7 +37,7 @@ namespace XSample.MarkDownDeep.XI
             window.RootViewController = root_navigation_controller;
             window.MakeKeyAndVisible();
 		
-            System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.DefaultTraceListener());
+            //System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.DefaultTraceListener());
             	
             return true;
         }

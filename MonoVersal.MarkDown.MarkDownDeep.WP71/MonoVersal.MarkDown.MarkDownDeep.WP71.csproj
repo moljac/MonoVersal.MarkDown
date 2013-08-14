@@ -70,7 +70,7 @@
     <Compile Include="LinkInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MardownDeep.cs">
+    <Compile Include="MarkdownDeep.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MarkdownDeep.WP.cs">

@@ -5,50 +5,54 @@ using MonoTouch.UIKit;
 
 namespace XSample.MarkDownDeep.XI
 {
-    public partial class MarkUpController : UIViewController
-    {
-        static bool UserInterfaceIdiomIsPhone
-        {
-            get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
-        }
+	public partial class MarkUpController : UIViewController
+	{
+		static bool UserInterfaceIdiomIsPhone
+		{
+			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
+		}
 
-        public MarkUpController()
+		public MarkUpController()
 			: base (UserInterfaceIdiomIsPhone ? "MarkUpController_iPhone" : "MarkUpController_iPad", null)
-        {
-        }
+		{
+		}
 
-        public override void DidReceiveMemoryWarning()
-        {
-            // Releases the view if it doesn't have a superview.
-            base.DidReceiveMemoryWarning();
+		public override void DidReceiveMemoryWarning()
+		{
+			// Releases the view if it doesn't have a superview.
+			base.DidReceiveMemoryWarning();
 			
-            // Release any cached data, images, etc that aren't in use.
-        }
+			// Release any cached data, images, etc that aren't in use.
+		}
 
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
 			
-            // Perform any additional setup after loading the view, typically from a nib.
-        }
-        
-        
-         public override void ViewWillAppear (bool animated)
-        {        
-        }
+			// Perform any additional setup after loading the view, typically from a nib.
 
-        void HandleTouchUpInside (object sender, EventArgs e)
-        {
-            //this.DismissViewController(true, Aa);
-            this.NavigationController.PopViewControllerAnimated(true);
-            
-            return;
-        }
-        
-        public void Aa()
-        {
-        
-        }
-    }
+			webViewMarkUp.LoadHtmlString(BusinessLogicObject.MarkUpHTML, null);
+
+			return;
+		}
+		
+		
+		public override void ViewWillAppear (bool animated)
+		{        
+		}
+
+		void HandleTouchUpInside (object sender, EventArgs e)
+		{
+			//this.DismissViewController(true, Aa);
+			this.NavigationController.PopViewControllerAnimated(true);
+			
+			return;
+		}
+		
+		public void Aa()
+		{
+		
+		}
+	}
 }
 

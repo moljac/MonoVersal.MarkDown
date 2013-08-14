@@ -39,6 +39,11 @@ namespace XSample.MarkDownDeep.XI
 
 		void HandleClicked (object sender, EventArgs e)
 		{
+			BusinessLogicObject.MarkDown = textViewMarkDown.Text;
+			BusinessLogicObject.MarkUpHTML =
+					BusinessLogicObject.MarkDownEngine.Transform(BusinessLogicObject.MarkDown);
+
+
 			this.NavigationController.PushViewController(markup_controller,true);
 
 			return;            
@@ -70,7 +75,7 @@ namespace XSample.MarkDownDeep.XI
 		
 		public void PresentViewControllerCompleted()
 		{
-			System.Diagnostics.Trace.WriteLine("PresentViewControllerCompleted");
+			//System.Diagnostics.Trace.WriteLine("PresentViewControllerCompleted");
 		
 			return;
 		}

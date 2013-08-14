@@ -61,8 +61,8 @@
     <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\LinkInfo.cs">
       <Link>LinkInfo.cs</Link>
     </Compile>
-    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\MardownDeep.cs">
-      <Link>MardownDeep.cs</Link>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\MarkdownDeep.cs">
+      <Link>MarkdownDeep.cs</Link>
     </Compile>
     <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\patches\System.Drawing\Image.cs">
       <Link>patches\System.Drawing\Image.cs</Link>
@@ -85,12 +85,13 @@
     <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Utils.cs">
       <Link>Utils.cs</Link>
     </Compile>
+    <Compile Include="MarkdownDeep.XI.cs" />
     <Compile Include="patches\System.Drawing\Image.XI.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
