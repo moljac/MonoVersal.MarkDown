@@ -25,7 +25,7 @@ call .\compile.bat
 
 
 set MONO="%PROGRAMFILES%\Mono-3.0.9\bin\mono.exe"
-set XPKG=bin.apps\xpkg\xpkg.exe
+set XPKG=sbin\xpkg\xpkg.exe
 set RAKE=C:\bin\Ruby200\bin\rake
 
 
