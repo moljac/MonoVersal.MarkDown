@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>MarkdownDeep</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MonoVersal.MarkDown.MarkDownDeep.XI</AssemblyName>
+    <AssemblyName>MarkDownDeep.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

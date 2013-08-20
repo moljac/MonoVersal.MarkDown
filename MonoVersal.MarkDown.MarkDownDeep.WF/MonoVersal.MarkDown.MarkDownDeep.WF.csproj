@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkdownDeep</RootNamespace>
-    <AssemblyName>MonoVersal.MarkDown.MarkDownDeep.WF</AssemblyName>
+    <AssemblyName>MarkDownDeep.WindowsForms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

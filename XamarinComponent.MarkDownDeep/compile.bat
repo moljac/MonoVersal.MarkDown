@@ -3,32 +3,31 @@ call "%PROGRAMFILES%\Microsoft Visual Studio 10.0\VC\vcvarsall.bat"
 
 
 rmdir /q /s .\bin\
-rmdir /q /s .\bin\
 
-:: =============================================================================================
-:: select solution file sln to compile all projects
-::		..\SharpSerializer.sln
-:: project files to narrow selection
-:: output of compilation is in <ProjectName>\bin\Debug.msbuild\
-set PROJECTS=^
-	..\MonoVersal.MarkDown.MarkDownDeep.XA\MonoVersal.MarkDown.MarkDownDeep.XA.csproj ^
-	..\MonoVersal.MarkDown.MarkDownDeep.XI\MonoVersal.MarkDown.MarkDownDeep.XI.csproj 
+msbuild ..\MonoVersal.MarkDown.MarkDownDeep.XA\MonoVersal.MarkDown.MarkDownDeep.XA.csproj ^
+		/p:Configuration=Release ^
+		/property:OutDir=..\XamarinComponent.MarkDownDeep\content\bin\
 
-set CONFIGURATION=Debug
-::set CONFIGURATION=Release
+msbuild ..\MonoVersal.MarkDown.MarkDownDeep.XI\MonoVersal.MarkDown.MarkDownDeep.XI.csproj ^
+		/p:Configuration=Release ^
+		/property:OutDir=..\XamarinComponent.MarkDownDeep\content\bin\
 
-for %%p IN (%PROJECTS%) DO (
-	echo ------------------------------------------------------------------
-	echo %%p
-	msbuild %%p ^
-			/p:Configuration=%CONFIGURATION% ^
-			/property:OutDir=.\bin\%CONFIGURATION%.msbuild\
 
-	msbuild %%p ^
-			/p:Configuration=%CONFIGURATION% ^
-			/property:OutDir=.\bin\%CONFIGURATION%.msbuild\
-			
-)
-:: =============================================================================================
+
+msbuild ..\MonoVersal.MarkDown.MarkDownDeep.XA\MonoVersal.MarkDown.MarkDownDeep.XA.csproj ^
+		/p:Configuration=Release ^
+		/property:OutDir=..\XamarinComponent.MarkDownDeep\content\lib\Release\Android\
+
+msbuild ..\MonoVersal.MarkDown.MarkDownDeep.XA\MonoVersal.MarkDown.MarkDownDeep.XA.csproj ^
+		/p:Configuration=Debug ^
+		/property:OutDir=..\XamarinComponent.MarkDownDeep\content\lib\Debug\Android\
+
+msbuild ..\MonoVersal.MarkDown.MarkDownDeep.XI\MonoVersal.MarkDown.MarkDownDeep.XI.csproj ^
+		/p:Configuration=Release ^
+		/property:OutDir=..\XamarinComponent.MarkDownDeep\content\lib\Release\iOS
+
+msbuild ..\MonoVersal.MarkDown.MarkDownDeep.XI\MonoVersal.MarkDown.MarkDownDeep.XI.csproj ^
+		/p:Configuration=Debug ^
+		/property:OutDir=..\XamarinComponent.MarkDownDeep\content\lib\Debug\iOS\
 
 @IF %ERRORLEVEL% NEQ 0 PAUSE	

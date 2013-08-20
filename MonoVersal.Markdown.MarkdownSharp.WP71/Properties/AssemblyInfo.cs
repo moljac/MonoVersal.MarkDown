@@ -6,11 +6,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MonoVersal.Markdown.MarkdownSharp.WP")]
+[assembly: AssemblyTitle("MarkdownSharp.WP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HolisticWare")]
-[assembly: AssemblyProduct("MonoVersal.Markdown.MarkdownSharp.WP")]
+[assembly: AssemblyProduct("MarkdownSharp.WP")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

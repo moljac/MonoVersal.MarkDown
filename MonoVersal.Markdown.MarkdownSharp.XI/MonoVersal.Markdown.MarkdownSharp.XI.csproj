@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>MarkdownSharp</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MonoVersal.Markdown.MarkdownSharp.XI</AssemblyName>
+    <AssemblyName>MarkdownSharp.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>

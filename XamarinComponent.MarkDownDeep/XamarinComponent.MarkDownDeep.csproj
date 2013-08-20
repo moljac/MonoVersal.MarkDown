@@ -64,6 +64,8 @@
     <None Include="compile.bat" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\icons\MarkDownDeep_128x128.png" />
+    <Content Include="content\icons\MarkDownDeep_512x512.png" />
     <Content Include="sbin\xpkg.old\ICSharpCode.SharpZipLib.dll" />
     <Content Include="sbin\xpkg.old\mdoc.exe" />
     <Content Include="sbin\xpkg.old\Mono.Cecil.dll" />
@@ -77,17 +79,10 @@
     <Content Include="content\icons\HolisticWare.320x320.png" />
     <Content Include="content\icons\HolisticWare.48x48.png" />
     <Content Include="content\icons\hw-bckgrd=white.svg" />
-    <Content Include="content\icons\SharpSerializerLogo.png" />
-    <Content Include="content\icons\SharpSerializer_128x128.1.png" />
-    <Content Include="content\icons\SharpSerializer_128x128.png" />
-    <Content Include="content\icons\SharpSerializer_512x512.1.png" />
-    <Content Include="content\icons\SharpSerializer_512x512.png" />
     <Content Include="how-to.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\bin\" />
-    <Folder Include="content\lib\android\" />
-    <Folder Include="content\lib\ios\" />
     <Folder Include="content\samples\" />
     <Folder Include="screenshots\" />
   </ItemGroup>

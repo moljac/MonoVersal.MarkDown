@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkdownSharp</RootNamespace>
-    <AssemblyName>MonoVersal.Markdown.MarkdownSharp.XA</AssemblyName>
+    <AssemblyName>MarkdownSharp.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>

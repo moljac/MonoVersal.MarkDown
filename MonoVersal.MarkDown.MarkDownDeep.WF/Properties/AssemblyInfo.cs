@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MonoVersal.MarkDown.MarkDownDeep.WF")]
+[assembly: AssemblyTitle("MarkDownDeep.WF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HolisticWare")]
-[assembly: AssemblyProduct("MonoVersal.MarkDown.MarkDownDeep.WF")]
+[assembly: AssemblyProduct("MarkDownDeep.WF")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
