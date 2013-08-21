@@ -16,8 +16,8 @@ HTML editors.
 
 ### Easy integration ###
 
-Using MarkdownDeep is trivially easy. Both the .NET and JavaScript editions have an a
-lmost identical API.
+Using MarkdownDeep is trivially easy. Both the .NET and JavaScript editions have an
+almost identical API.
 
 Note: This page covers the Markdown to HTML text transformation APIs. For instructions 
 on integrating the client side editor GUI, see here.
@@ -53,8 +53,10 @@ Transform the Markdown content:
 
 ```
 
+## References ##
+*	[http://www.toptensoftware.com/markdowndeep/](http://www.toptensoftware.com/markdowndeep/)
 
-Cross-platform port by HolisticWare team:
+## Cross-platform port by HolisticWare team: ##
 
 * 	[http://holisticware.net](http://holisticware.net)
 

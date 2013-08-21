@@ -43,8 +43,8 @@
     <JavaOptions />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MarkDownDeep.Android">
-      <HintPath>..\..\..\lib\Release\Android\MarkDownDeep.Android.dll</HintPath>
+    <Reference Include="MarkDownDeep.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\lib\android\MarkDownDeep.Android.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />

@@ -12,7 +12,6 @@ namespace XSample.MarkDownDeep.XA
 	[Activity(Label = "XSample.MarkDownDeep.XA")]
 	public class ActivityMarkUp : Activity
 	{
-		String html = "<html><body>Hello, World!</body></html>";
 		String mime = "text/html";
 		String encoding = "utf-8";
 
