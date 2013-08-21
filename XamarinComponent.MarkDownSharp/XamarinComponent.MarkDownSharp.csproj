@@ -51,6 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="git-add-ignored-libraries.bat" />
     <None Include="sbin\xpkg.old\xpkg" />
     <None Include="sbin\xpkg.old\xpkg.zip" />
     <None Include="sbin\xpkg\xpkg.zip" />

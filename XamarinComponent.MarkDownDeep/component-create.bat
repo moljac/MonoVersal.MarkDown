@@ -11,9 +11,14 @@ set RAKE=C:\bin\Ruby200\bin\rake
 
 set PACKAGE=MarkDownDeep
 
-call .\compile.bat
-dir .\content\bin\*.dll
 DEL /Q *.xam *.xam.zip
+
+call .\compile.bat
+dir /s .\content\bin\*.dll
+dir /s .\content\lib\
+
+pause
+
 
 %MONO% ^
 	%XPKG% ^

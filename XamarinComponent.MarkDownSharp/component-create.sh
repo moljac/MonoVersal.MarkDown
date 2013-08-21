@@ -14,7 +14,7 @@ cd SharpSerializer
 	%XPKG% ^
 	create %PACKAGE%-1.0.xam ^
 	--name="HolisticWare SharpSerializer component" ^
-	--summary="HolisticWare featuring SharpSerializer" ^
+	--summary="%PACKAGE% ported and packaged by HolisticWare" ^
 	--publisher="HolisticWare LLC" ^
 	--website="http://holisticware.net/" ^
 	--details="content/Details.md" ^

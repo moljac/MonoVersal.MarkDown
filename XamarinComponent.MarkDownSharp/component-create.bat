@@ -11,16 +11,21 @@ set RAKE=C:\bin\Ruby200\bin\rake
 
 set PACKAGE=MarkDownSharp
 
-call .\compile.bat
-dir .\content\bin\*.dll
 DEL /Q *.xam *.xam.zip
+
+call .\compile.bat
+dir /s .\content\bin\*.dll
+dir /s .\content\lib\
+
+pause
+
 
 %MONO% ^
 	%XPKG% ^
 	create-manually ^
 	%PACKAGE%-1.0.xam ^
-	--name="MarkDownDeep" ^
-	--summary="MarkDownDeep Xamarin component by TopTenSoftware ported by HolisticWare" ^
+	--name="MarkDownSharp" ^
+	--summary="MarkDownSharp Xamarin component by TopTenSoftware ported by HolisticWare" ^
 	--publisher="HolisticWare LLC" ^
 	--website="http://holisticware.net/" ^
 	--details="content/Details.md" ^
