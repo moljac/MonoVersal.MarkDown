@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{73803E0C-B88C-423E-9DF9-C3AD6ADB0F01}</ProjectGuid>
+    <ProjectGuid>{F6AF6159-D97C-4ECE-A37E-78765EA39E97}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XSample.MarkDownDeep.XI</RootNamespace>
+    <RootNamespace>MarkDownDeep.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XSampleMarkDownDeepXI</AssemblyName>
+    <AssemblyName>MarkDownDeepiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,26 +76,22 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MarkDownDeep.iOS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\lib\ios\MarkDownDeep.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="monotouch">
-      <HintPath>..\..\..\lib\Release\iOS\monotouch.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MarkDownDeep.iOS">
+      <HintPath>..\..\src\libraries-moljac\git[github.com]\MonoVersal.MarkDown\MonoVersal.MarkDown.MarkDownDeep.XI\bin\Debug\MarkDownDeep.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
+    <None Include="MarkDownDeep.iOS.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\MarkDownDeep.Android\MarkDownDeep.Android\BusinessLogicObjects\BusinessLogicObject.cs">
-      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
-    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MainViewController.cs" />
@@ -107,16 +103,15 @@
       <DependentUpon>FlipsideViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="MarkUpController.cs" />
-    <Compile Include="MarkUpController.designer.cs">
-      <DependentUpon>MarkUpController.cs</DependentUpon>
-    </Compile>
+    <Compile Include="MarkUpController.designer.cs" />
+    <Compile Include="BusinessLogicObjects\BusinessLogicObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController_iPhone.xib" />
     <InterfaceDefinition Include="MainViewController_iPad.xib" />
     <InterfaceDefinition Include="FlipsideViewController.xib" />
-    <InterfaceDefinition Include="MarkUpController_iPhone.xib" />
     <InterfaceDefinition Include="MarkUpController_iPad.xib" />
+    <InterfaceDefinition Include="MarkUpController_iPhone.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

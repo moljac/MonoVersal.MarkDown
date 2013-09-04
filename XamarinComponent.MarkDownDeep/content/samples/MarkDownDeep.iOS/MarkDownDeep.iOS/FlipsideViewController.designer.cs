@@ -5,7 +5,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace XSample.MarkDownDeep.XI
+namespace MarkDownDeep.iOS
 {
 	[Register ("FlipsideViewController")]
 	partial class FlipsideViewController

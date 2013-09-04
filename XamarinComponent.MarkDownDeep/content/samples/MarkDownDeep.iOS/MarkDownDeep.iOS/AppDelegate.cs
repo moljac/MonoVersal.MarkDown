@@ -4,7 +4,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace XSample.MarkDownDeep.XI
+namespace MarkDownDeep.iOS
 {
     /// The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
@@ -15,8 +15,6 @@ namespace XSample.MarkDownDeep.XI
         // class-level declarations
         UIWindow window;
         MainViewController mainViewController;
-        UINavigationController root_navigation_controller;
-        
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -28,17 +26,10 @@ namespace XSample.MarkDownDeep.XI
         {
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
-            root_navigation_controller = new UINavigationController();
-            
             mainViewController = new MainViewController();
-            root_navigation_controller.PushViewController(mainViewController, true);
-            
-                       
-            window.RootViewController = root_navigation_controller;
+            window.RootViewController = mainViewController;
             window.MakeKeyAndVisible();
-		
-            //System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.DefaultTraceListener());
-            	
+			
             return true;
         }
     }

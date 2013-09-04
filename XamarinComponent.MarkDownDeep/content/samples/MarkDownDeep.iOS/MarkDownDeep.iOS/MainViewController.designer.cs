@@ -7,11 +7,14 @@
 using MonoTouch.Foundation;
 using System.CodeDom.Compiler;
 
-namespace XSample.MarkDownDeep.XI
+namespace MarkDownDeep.iOS
 {
 	[Register ("MainViewController")]
 	partial class MainViewController
 	{
+		[Outlet]
+		MonoTouch.UIKit.UIButton buttonMarkUp { get; set; }
+
 		[Outlet]
 		MonoTouch.UIKit.UITextView textViewMarkDown { get; set; }
 
@@ -23,6 +26,11 @@ namespace XSample.MarkDownDeep.XI
 			if (textViewMarkDown != null) {
 				textViewMarkDown.Dispose ();
 				textViewMarkDown = null;
+			}
+
+			if (buttonMarkUp != null) {
+				buttonMarkUp.Dispose ();
+				buttonMarkUp = null;
 			}
 		}
 	}

@@ -4,7 +4,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace XSample.MarkDownDeep.XI
+namespace MarkDownDeep.iOS
 {
     public class Application
     {

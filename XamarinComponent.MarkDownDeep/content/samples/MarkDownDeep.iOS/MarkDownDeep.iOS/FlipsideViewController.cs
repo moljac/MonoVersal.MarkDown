@@ -3,7 +3,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace XSample.MarkDownDeep.XI
+namespace MarkDownDeep.iOS
 {
     public partial class FlipsideViewController : UIViewController
     {

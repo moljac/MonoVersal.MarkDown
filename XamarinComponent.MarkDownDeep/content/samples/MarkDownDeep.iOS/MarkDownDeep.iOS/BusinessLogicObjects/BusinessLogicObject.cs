@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace XSample.MarkDownDeep
+namespace MarkDownDeep.iOS
 {
 	public partial class BusinessLogicObject 
 	{
