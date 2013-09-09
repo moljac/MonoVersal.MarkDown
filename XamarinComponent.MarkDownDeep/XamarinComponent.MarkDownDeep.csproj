@@ -51,6 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="compile.sh.command" />
+    <None Include="component-create.sh.command" />
     <None Include="git-add-ignored-libraries.bat" />
     <None Include="sbin\xpkg.old\xpkg" />
     <None Include="sbin\xpkg.old\xpkg.zip" />
@@ -67,30 +69,15 @@
   <ItemGroup>
     <Content Include="content\icons\MarkDownDeep_128x128.png" />
     <Content Include="content\icons\MarkDownDeep_512x512.png" />
-    <Content Include="content\lib\Debug\Android\MarkDownDeep.Android.dll" />
-    <Content Include="content\lib\Debug\Android\MarkDownDeep.Android.dll.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="content\lib\Debug\Android\MarkDownDeep.Android.pdb" />
-    <Content Include="content\lib\Debug\iOS\MarkDownDeep.iOS.dll" />
-    <Content Include="content\lib\Debug\iOS\MarkDownDeep.iOS.pdb" />
-    <Content Include="content\lib\Debug\iOS\Mono.Security.dll" />
-    <Content Include="content\lib\Debug\iOS\monotouch.dll" />
-    <Content Include="content\lib\Debug\iOS\System.Core.dll" />
-    <Content Include="content\lib\Debug\iOS\System.dll" />
-    <Content Include="content\lib\Debug\iOS\System.Xml.dll" />
-    <Content Include="content\lib\Release\Android\MarkDownDeep.Android.dll" />
-    <Content Include="content\lib\Release\Android\MarkDownDeep.Android.dll.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="content\lib\Release\Android\MarkDownDeep.Android.pdb" />
-    <Content Include="content\lib\Release\iOS\MarkDownDeep.iOS.dll" />
-    <Content Include="content\lib\Release\iOS\MarkDownDeep.iOS.pdb" />
-    <Content Include="content\lib\Release\iOS\Mono.Security.dll" />
-    <Content Include="content\lib\Release\iOS\monotouch.dll" />
-    <Content Include="content\lib\Release\iOS\System.Core.dll" />
-    <Content Include="content\lib\Release\iOS\System.dll" />
-    <Content Include="content\lib\Release\iOS\System.Xml.dll" />
+    <Content Include="content\lib\android\MarkDownDeep.Android.dll" />
+    <Content Include="content\lib\android\MarkDownDeep.Android.pdb" />
+    <Content Include="content\lib\ios\MarkDownDeep.iOS.dll" />
+    <Content Include="content\lib\ios\MarkDownDeep.iOS.pdb" />
+    <Content Include="content\lib\ios\Mono.Security.dll" />
+    <Content Include="content\lib\ios\monotouch.dll" />
+    <Content Include="content\lib\ios\System.Core.dll" />
+    <Content Include="content\lib\ios\System.dll" />
+    <Content Include="content\lib\ios\System.Xml.dll" />
     <Content Include="sbin\xpkg.old\ICSharpCode.SharpZipLib.dll" />
     <Content Include="sbin\xpkg.old\mdoc.exe" />
     <Content Include="sbin\xpkg.old\Mono.Cecil.dll" />

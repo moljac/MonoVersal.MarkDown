@@ -17,9 +17,6 @@ call .\compile.bat
 dir /s .\content\bin\*.dll
 dir /s .\content\lib\
 
-pause
-
-
 %MONO% ^
 	%XPKG% ^
 	create-manually ^
