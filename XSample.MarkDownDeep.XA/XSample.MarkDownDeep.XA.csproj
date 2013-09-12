@@ -38,9 +38,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidStoreUncompressedFileExtensions />
-    <JavaMaximumHeapSize />
-    <JavaOptions />
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <JavaOptions>
+    </JavaOptions>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />

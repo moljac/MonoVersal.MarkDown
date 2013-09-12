@@ -13,11 +13,8 @@ set PACKAGE=MarkDownDeep
 
 DEL /Q *.xam *.xam.zip
 
-call .\compile.bat
 dir /s .\content\bin\*.dll
 dir /s .\content\lib\
-
-pause
 
 
 %MONO% ^
