@@ -13,9 +13,6 @@ namespace MarkDownDeep.iOS
 	partial class MainViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonMarkUp { get; set; }
-
-		[Outlet]
 		MonoTouch.UIKit.UITextView textViewMarkDown { get; set; }
 
 		[Action ("showInfo:")]
@@ -26,11 +23,6 @@ namespace MarkDownDeep.iOS
 			if (textViewMarkDown != null) {
 				textViewMarkDown.Dispose ();
 				textViewMarkDown = null;
-			}
-
-			if (buttonMarkUp != null) {
-				buttonMarkUp.Dispose ();
-				buttonMarkUp = null;
 			}
 		}
 	}

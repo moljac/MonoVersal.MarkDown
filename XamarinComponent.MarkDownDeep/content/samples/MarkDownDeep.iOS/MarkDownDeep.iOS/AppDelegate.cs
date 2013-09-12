@@ -15,6 +15,8 @@ namespace MarkDownDeep.iOS
         // class-level declarations
         UIWindow window;
         MainViewController mainViewController;
+        UINavigationController root_navigation_controller;
+        
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -26,10 +28,17 @@ namespace MarkDownDeep.iOS
         {
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
+            root_navigation_controller = new UINavigationController();
+            
             mainViewController = new MainViewController();
-            window.RootViewController = mainViewController;
+            root_navigation_controller.PushViewController(mainViewController, true);
+            
+                       
+            window.RootViewController = root_navigation_controller;
             window.MakeKeyAndVisible();
-			
+		
+            //System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.DefaultTraceListener());
+            	
             return true;
         }
     }

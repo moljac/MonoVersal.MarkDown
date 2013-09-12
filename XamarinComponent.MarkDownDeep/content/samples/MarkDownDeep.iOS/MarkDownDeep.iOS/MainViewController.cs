@@ -6,10 +6,10 @@ namespace MarkDownDeep.iOS
 {
 	public partial class MainViewController : 
 		UIViewController
+		//UINavigationController
 	{
 		MarkUpController markup_controller = null;
-		UINavigationController root_controler = null;
-        
+		
 		static bool UserInterfaceIdiomIsPhone
 		{
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
@@ -28,16 +28,15 @@ namespace MarkDownDeep.iOS
 			base.ViewDidLoad();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
-            
+			markup_controller = new MarkUpController();
+			
 			var button_markup = new UIBarButtonItem(UIBarButtonSystemItem.Play);
 			button_markup.Clicked += HandleClicked;
 			this.NavigationItem.RightBarButtonItem = button_markup; 
 
-            // buttonMarkUp.TouchUpInside += HandleClicked;
             textViewMarkDown.Text = BusinessLogicObject.MarkDown;
             
-
-            			return;
+			return;
 		}
 
 		void HandleClicked (object sender, EventArgs e)
@@ -47,8 +46,7 @@ namespace MarkDownDeep.iOS
 					BusinessLogicObject.MarkDownEngine.Transform(BusinessLogicObject.MarkDown);
 
 
-            markup_controller = new MarkUpController();
-			this.NavigationController.PresentViewController(markup_controller, true, null);
+			this.NavigationController.PushViewController(markup_controller,true);
 
 			return;            
 		}
