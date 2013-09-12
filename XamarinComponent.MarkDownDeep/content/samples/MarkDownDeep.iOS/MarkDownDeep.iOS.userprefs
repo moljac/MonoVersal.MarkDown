@@ -1,17 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MarkDownDeep.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="MarkDownDeep.iOS/MainViewController.cs" Line="31" Column="1" />
+      <File FileName="MarkDownDeep.iOS/MainViewController.cs" Line="1" Column="1" />
       <File FileName="MarkDownDeep.iOS/MainViewController.designer.cs" Line="1" Column="1" />
       <File FileName="MarkDownDeep.iOS/AppDelegate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="MarkDownDeep.iOS" expanded="True">
+          <Node name="MarkDownDeep.iOS" expanded="True" selected="True">
             <Node name="BusinessLogicObjects" expanded="True" />
-            <Node name="AppDelegate.cs" selected="True" />
             <Node name="MainViewController.cs" expanded="True" />
           </Node>
         </State>
@@ -21,6 +20,9 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
