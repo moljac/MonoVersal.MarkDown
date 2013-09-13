@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>MarkDownDeep.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MarkDownDeep.iOS</AssemblyName>
+    <AssemblyName>MarkDownDeepiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
