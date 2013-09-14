@@ -7,7 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace XSample.MarkDownDeep.XA
+namespace XSample.MarkDownDeep
 {
 	[Activity(Label = "XSample.MarkDownDeep.XA")]
 	public class ActivityMarkUp : Activity
@@ -25,12 +25,13 @@ namespace XSample.MarkDownDeep.XA
 			// Get our buttonTransform from the layout resource,
 			// and attach an event to it
 			Button		buttonTransform = FindViewById<Button>(Resource.Id.Transform);
-			Android.Webkit.WebView browser = FindViewById<Android.Webkit.WebView>(Resource.Id.webView1);
+			global::Android.Webkit.WebView browser = null;
+			browser = FindViewById<global::Android.Webkit.WebView>(Resource.Id.webView1);
 			
 			string html = "";
 			html = BusinessLogicObject.MarkUpHTML;
 
-			if (Android.OS.Build.VERSION .Release.StartsWith("2."))
+			if (global::Android.OS.Build.VERSION.Release.StartsWith("2."))
 			{
 			// http://developer.android.com/guide/topics/manifest/uses-sdk-element.html
 			// In 2.x platforms loadData() fails in some cases (it requires the html to be escaped), 

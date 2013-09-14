@@ -7,7 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace XSample.MarkDownDeep.XA
+namespace XSample.MarkDownDeep
 {
 	[Activity(Label = "XSample.MarkDownDeep.XA", MainLauncher = true, Icon = "@drawable/icon")]
 	public class ActivityMarkDown : Activity

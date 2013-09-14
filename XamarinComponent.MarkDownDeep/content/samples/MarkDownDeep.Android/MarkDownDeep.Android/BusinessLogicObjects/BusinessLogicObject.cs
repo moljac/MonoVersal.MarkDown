@@ -9,8 +9,8 @@ namespace XSample.MarkDownDeep
 	{
 		public static MarkdownDeep.Markdown MarkDownEngine = null;
 
-        public static string MarkUpHTML = "";
-        public static string MarkDown = 
+		public static string MarkUpHTML = "";
+		public static string MarkDown = 
 @"
 ## Welcome to MarkDownDeep
 
@@ -69,7 +69,7 @@ Header 2
 
 *   A list item.
 
-    With multiple paragraphs.
+	With multiple paragraphs.
 
 *   Bar
 
@@ -77,12 +77,12 @@ Header 2
 
 
 *   Abacus
-    * answer
+	* answer
 *   Bubbles
-    1.  bunk
-    2.  bupkis
-        * BELITTLER
-    3. burper
+	1.  bunk
+	2.  bupkis
+		* BELITTLER
+	3. burper
 *   Cunning
 
 
@@ -111,8 +111,8 @@ Header 2
 
 This is a normal paragraph.
 
-    This is a preformatted
-    code block.
+	This is a preformatted
+	code block.
 
 
 ---
