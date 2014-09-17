@@ -49,7 +49,7 @@ namespace System.Drawing
 			// Android.Graphics.Bitmap bitmap = 
 			// 	Android.Graphics.BitmapFactory.DecodeStream(context.OpenFileInput(string));
 
-			return default(MonoTouch.CoreGraphics.CGBitmapContext);
+			return default(CGBitmapContext);
 		}
 	}
 }

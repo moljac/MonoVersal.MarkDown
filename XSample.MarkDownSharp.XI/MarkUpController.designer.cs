@@ -4,8 +4,25 @@
 // actions made in the UI designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
+#if __UNIFIED__
+using UIKit;
+using Foundation;
+using CoreAnimation;
+using CoreGraphics;
+#else
+using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using System.CodeDom.Compiler;
+using MonoTouch.CoreAnimation;
+using MonoTouch.CoreGraphics;
+
+using System.Drawing;
+using CGRect = global::System.Drawing.RectangleF;
+using CGPoint = global::System.Drawing.PointF;
+using CGSize = global::System.Drawing.SizeF;
+using nfloat = global::System.Single;
+using nint = global::System.Int32;
+using nuint = global::System.UInt32;
+#endif
 
 namespace XSample.MarkDownDeep.XI
 {
@@ -13,10 +30,10 @@ namespace XSample.MarkDownDeep.XI
 	partial class MarkUpController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonReturnToMarkdown { get; set; }
+		UIButton buttonReturnToMarkdown { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIWebView webViewMarkUp { get; set; }
+		UIWebView webViewMarkUp { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
