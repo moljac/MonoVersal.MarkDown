@@ -3,7 +3,7 @@ id: MarkDownSharp
 name: MarkDownSharp
 publisher: HolisticWare d.o.o.
 publisher-url: http://holisticware.net
-summary: XMarkDownDeep MarkDownSharp Xamarin component ported by HolisticWare
+summary: MarkDownSharp Xamarin component ported by HolisticWare
 details: content/Details.md
 license: content/LICENSE.md
 getting-started: content/GettingStarted.md
@@ -21,7 +21,7 @@ samples:
   - name: "iOS Unified Sample"
     path: content/samples/MarkDownSharp.iOS/XSample.MarkDownSharp.XI.sln
   - name: "iOS Classic Sample"
-    path: content/samples/MarkDownSharp.iOS-Classic/XSample.MarkDownSharp.XI-Classic.sln
+    path: content/samples/MarkDownSharp.iOS/XSample.MarkDownSharp.XI-Classic.sln
 icons:
   - content/icons/MarkDownSharp_128x128.png
   - content/icons/MarkDownSharp_512x512.png
