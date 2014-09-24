@@ -6,9 +6,9 @@
     <ProjectGuid>{6C2F2041-37B8-4CF2-A87F-EB42CD5A5CD9}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XSample.MarkDownDeep.XI</RootNamespace>
+    <RootNamespace>XSample.MarkDownSharp.XI</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XSampleMarkDownDeepXI</AssemblyName>
+    <AssemblyName>XSampleMarkDownSharpXI</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -17,11 +17,14 @@
     <DefineConstants>DEBUG;__UNIFIED__;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <MtouchLink>None</MtouchLink>
     <ConsolePause>false</ConsolePause>
     <MtouchDebug>true</MtouchDebug>
     <OutputPath>bin\unified\iPhoneSimulator\Debug</OutputPath>
     <IntermediateOutputPath>obj\unified\iPhoneSimulator\Debug</IntermediateOutputPath>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -46,6 +49,11 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <OutputPath>bin\unified\iPhone\Debug</OutputPath>
     <IntermediateOutputPath>obj\unified\iPhone\Debug</IntermediateOutputPath>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
