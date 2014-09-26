@@ -47,6 +47,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <OutputPath>bin\classic\iPhone\Debug</OutputPath>
     <IntermediateOutputPath>obj\classic\iPhone\Debug</IntermediateOutputPath>
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
