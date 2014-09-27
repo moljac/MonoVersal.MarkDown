@@ -61,6 +61,7 @@
     <None Include="content\README.md" />
     <None Include="component-create.sh" />
     <None Include="compile.bat" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\icons\MarkDownSharp_128x128.png" />

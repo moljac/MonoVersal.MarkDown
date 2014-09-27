@@ -89,7 +89,7 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="MarkdownSharp.iOS">
-      <HintPath>..\..\..\lib\ios\classic\MarkdownSharp.iOS.dll</HintPath>
+      <HintPath>..\..\..\lib\ios\MarkdownSharp.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
