@@ -1,4 +1,4 @@
-version: 1.1.0
+version: 1.1.1
 id: MarkDownDeep
 name: MarkDownDeep
 publisher: HolisticWare d.o.o.
@@ -7,21 +7,24 @@ summary: XMarkDownDeep Xamarin component by TopTenSoftware ported by HolisticWar
 details: content/Details.md
 license: content/LICENSE.md
 getting-started: content/GettingStarted.md
-no_build: true
+#no_build: true
 libraries:
   ios:
-    - content/lib/ios/classic/MarkDownDeep.iOS.dll
+    - content/lib/ios/MarkDownDeep.iOS.dll
   ios-unified: 
-    - content/lib/ios/unified/MarkDownDeep.iOS.dll
+    - content/lib/ios-unified/MarkDownDeep.iOS.dll
   android:
     - content/lib/android/MarkDownDeep.Android.dll
 samples:
   - name: "Android Sample"
     path: content/samples/MarkDownDeep.Android/XSample.MarkDownDeep.XA.sln
+    configuration: "Release|iPhone"
   - name: "iOS Unified Sample"
     path: content/samples/MarkDownDeep.iOS/XSample.MarkDownDeep.XI.sln
+    configuration: "Release|iPhone"
   - name: "iOS Classic Sample"
     path: content/samples/MarkDownDeep.iOS-Classic/XSample.MarkDownDeep.XI-Classic.sln
+    configuration: "Release|iPhone"
 icons:
   - content/icons/MarkDownDeep_128x128.png
   - content/icons/MarkDownDeep_512x512.png

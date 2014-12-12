@@ -89,7 +89,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="MarkDownDeep.iOS">
-      <HintPath>..\..\..\lib\ios\unified\MarkDownDeep.iOS.dll</HintPath>
+      <HintPath>..\..\..\lib\ios-unified\MarkDownDeep.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

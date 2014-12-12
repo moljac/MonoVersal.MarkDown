@@ -87,7 +87,7 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="MarkDownDeep.iOS">
-      <HintPath>..\..\..\lib\ios\classic\MarkDownDeep.iOS.dll</HintPath>
+      <HintPath>..\..\..\lib\ios\MarkDownDeep.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
