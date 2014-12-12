@@ -90,6 +90,9 @@
     <Compile Include="patches\System.Drawing\Image.XA.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.XI\ImageInfo.cs">
+      <Link>ImageInfo.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

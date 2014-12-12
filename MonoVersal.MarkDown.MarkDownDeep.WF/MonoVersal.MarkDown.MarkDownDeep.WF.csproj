@@ -83,6 +83,9 @@
     </Compile>
     <Compile Include="MarkdownDeep.WF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.XI\ImageInfo.cs">
+      <Link>ImageInfo.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="patches\System.Drawing\" />

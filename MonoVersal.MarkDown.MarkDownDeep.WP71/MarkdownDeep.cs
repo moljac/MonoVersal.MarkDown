@@ -17,18 +17,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+#if __UNIFIED__
+#else
+using nint=System.Int32;
+#endif
+
 namespace MarkdownDeep
 {
-
-	public class ImageInfo
-	{
-		public string url;
-		public bool titled_image;
-		public int width;
-		public int height;
-	}
-
-
 	public partial class Markdown
 	{
 		// Constructor
@@ -373,7 +368,7 @@ namespace MarkdownDeep
 		public Func<ImageInfo, bool> GetImageSize;
 
 		// Override to supply the size of an image
-		public virtual bool OnGetImageSize(string url, bool TitledImage, out int width, out int height)
+		public virtual bool OnGetImageSize(string url, bool TitledImage, out nint width, out nint height)
 		{
 			if (GetImageSize != null)
 			{
@@ -472,7 +467,7 @@ namespace MarkdownDeep
 			}
 
 			// Try to determine width and height
-			int width, height;
+			nint width, height;
 			if (OnGetImageSize(tag.attributes["src"], TitledImage, out width, out height))
 			{
 				tag.attributes["width"] = width.ToString();

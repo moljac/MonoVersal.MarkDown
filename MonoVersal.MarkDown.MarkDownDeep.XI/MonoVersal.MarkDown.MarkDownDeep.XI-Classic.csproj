@@ -87,6 +87,7 @@
     </Compile>
     <Compile Include="MarkdownDeep.XI.cs" />
     <Compile Include="patches\System.Drawing\Image.XI.cs" />
+    <Compile Include="ImageInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
