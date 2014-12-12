@@ -13,11 +13,11 @@ set PACKAGE=MarkDownSharp
 
 DEL /Q *.xam *.xam.zip
 
-call .\compile.bat
+::call .\compile.bat
 dir /s .\content\bin\*.dll
 dir /s .\content\lib\
 
-%MONO% ^
+::%MONO% ^
 	%XPKG% ^
 	create-manually ^
 	%PACKAGE%-1.0.xam ^

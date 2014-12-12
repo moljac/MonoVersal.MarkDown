@@ -46,6 +46,11 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <OutputPath>bin\unified\iPhone\Debug</OutputPath>
     <IntermediateOutputPath>obj\unified\iPhone\Debug</IntermediateOutputPath>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
