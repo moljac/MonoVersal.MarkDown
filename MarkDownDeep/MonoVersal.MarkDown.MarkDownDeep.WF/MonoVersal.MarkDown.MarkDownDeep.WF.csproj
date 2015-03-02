@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{076FCEE9-5725-487E-9F1F-FEDD8842B681}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarkdownDeep</RootNamespace>
+    <AssemblyName>MarkDownDeep.WindowsForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Abbreviation.cs">
+      <Link>Abbreviation.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Block.cs">
+      <Link>Block.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\BlockProcessor.cs">
+      <Link>BlockProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\FootnoteReference.cs">
+      <Link>FootnoteReference.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\HtmlTag.cs">
+      <Link>HtmlTag.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\LinkDefinition.cs">
+      <Link>LinkDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\LinkInfo.cs">
+      <Link>LinkInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\MarkdownDeep.cs">
+      <Link>MarkdownDeep.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\patches\System\StringExtensions.cs">
+      <Link>patches\System\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\SpanFormatter.cs">
+      <Link>SpanFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\StringScanner.cs">
+      <Link>StringScanner.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\TableSpec.cs">
+      <Link>TableSpec.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Token.cs">
+      <Link>Token.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Utils.cs">
+      <Link>Utils.cs</Link>
+    </Compile>
+    <Compile Include="MarkdownDeep.WF.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.XI\ImageInfo.cs">
+      <Link>ImageInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="patches\System.Drawing\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

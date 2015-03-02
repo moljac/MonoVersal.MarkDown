@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B470DF4-7A66-4A88-B8FF-0F8E80A876BF}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MarkdownDeep</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MarkDownDeep.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\classic\AnyCPU\Debug</OutputPath>
+    <IntermediateOutputPath>obj\classic\AnyCPU\Debug</IntermediateOutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\classic\AnyCPU\Release</OutputPath>
+    <IntermediateOutputPath>obj\classic\AnyCPU\Release</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Abbreviation.cs">
+      <Link>Abbreviation.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Block.cs">
+      <Link>Block.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\BlockProcessor.cs">
+      <Link>BlockProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\FootnoteReference.cs">
+      <Link>FootnoteReference.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\HtmlTag.cs">
+      <Link>HtmlTag.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\LinkDefinition.cs">
+      <Link>LinkDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\LinkInfo.cs">
+      <Link>LinkInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\MarkdownDeep.cs">
+      <Link>MarkdownDeep.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\patches\System.Drawing\Image.cs">
+      <Link>patches\System.Drawing\Image.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\patches\System\StringExtensions.cs">
+      <Link>patches\System\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\SpanFormatter.cs">
+      <Link>SpanFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\StringScanner.cs">
+      <Link>StringScanner.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\TableSpec.cs">
+      <Link>TableSpec.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Token.cs">
+      <Link>Token.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoVersal.MarkDown.MarkDownDeep.WP71\Utils.cs">
+      <Link>Utils.cs</Link>
+    </Compile>
+    <Compile Include="MarkdownDeep.XI.cs" />
+    <Compile Include="patches\System.Drawing\Image.XI.cs" />
+    <Compile Include="ImageInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="26147a72-e619-4030-b1c3-965724aae8ad" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

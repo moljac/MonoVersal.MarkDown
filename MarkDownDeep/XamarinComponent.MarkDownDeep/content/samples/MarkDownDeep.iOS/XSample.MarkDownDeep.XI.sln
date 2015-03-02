@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XSample.MarkDownDeep.XI", "XSample.MarkDownDeep.XI\XSample.MarkDownDeep.XI.csproj", "{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Debug|iPhone.Build.0 = Debug|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Release|iPhone.ActiveCfg = Release|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Release|iPhone.Build.0 = Release|iPhone
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{74B0E8A7-DB21-4902-BED0-BF44AE4CD591}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = XSample.MarkDownDeep.XI\XSample.MarkDownDeep.XI.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
