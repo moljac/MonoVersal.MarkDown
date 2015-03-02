@@ -1,11 +1,13 @@
-MonoVersal.MarkDown
-===================
+# MonoVersal.MarkDown
+
 
 Cross platform Markdown utilities
 
-This is set of 
+This is set of markdown utilities ported to Xamarin platforms
 
-Markdown.Sharp
-	http://code.google.com/p/markdownsharp/
-	license: MIT licese http://opensource.org/licenses/mit-license.php
-	
+*	MarkdownSharp		
+	[http://code.google.com/p/markdownsharp/](http://code.google.com/p/markdownsharp/)
+*	MarkDownDeep
+
+
+
