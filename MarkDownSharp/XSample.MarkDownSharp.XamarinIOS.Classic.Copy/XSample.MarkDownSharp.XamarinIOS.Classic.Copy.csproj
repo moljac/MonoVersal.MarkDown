@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{8995F9FA-50F2-4B14-ACE1-4EFE1FFD107C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>XSample.MarkDownSharp.XamarinIOS.Classic.Copy</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>XSampleMarkDownSharpXamarinIOSClassicCopy</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\FlipsideViewController.xib">
+      <Link>FlipsideViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MainViewController_iPad.xib">
+      <Link>MainViewController_iPad.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MainViewController_iPhone.xib">
+      <Link>MainViewController_iPhone.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MarkUpController_iPad.xib">
+      <Link>MarkUpController_iPad.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MarkUpController_iPhone.xib">
+      <Link>MarkUpController_iPhone.xib</Link>
+    </InterfaceDefinition>
+    <None Include="Entitlements.plist" />
+    <None Include="original-project-items\Info.plist" />
+    <None Include="original-project-items\Main.cs" />
+    <None Include="original-project-items\AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\old\XSample.MarkDownSharp.XA\BusinessLogicObjects\BusinessLogicObject.cs">
+      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\AppDelegate.cs">
+      <Link>AppDelegate.cs</Link>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\FlipsideViewController.cs">
+      <Link>FlipsideViewController.cs</Link>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\FlipsideViewController.designer.cs">
+      <Link>FlipsideViewController.designer.cs</Link>
+      <DependentUpon>FlipsideViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\Main.cs">
+      <Link>Main.cs</Link>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\MainViewController.cs">
+      <Link>MainViewController.cs</Link>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\MainViewController.designer.cs">
+      <Link>MainViewController.designer.cs</Link>
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\MarkUpController.cs">
+      <Link>MarkUpController.cs</Link>
+    </Compile>
+    <Compile Include="..\old\XSample.MarkDownSharp.XI\MarkUpController.designer.cs">
+      <Link>MarkUpController.designer.cs</Link>
+      <DependentUpon>MarkUpController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\old\XSample.MarkDownSharp.XI\Info.plist">
+      <Link>Info.plist</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MonoVersal.Markdown.MarkdownSharp.XamarinIOS.Classic\MonoVersal.Markdown.MarkdownSharp.XamarinIOS.Classic.csproj">
+      <Project>{17F0645B-1FE1-49EB-8627-15A003C07472}</Project>
+      <Name>MonoVersal.Markdown.MarkdownSharp.XamarinIOS.Classic</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

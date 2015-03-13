@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
-	<string name="app_name">XSample.MarkDownSharp.XamarinAndroid</string>
+    <string name="Transform">Transform</string>
+    <string name="ApplicationName">XSample.MarkDownSharp.XA</string>
 </resources>

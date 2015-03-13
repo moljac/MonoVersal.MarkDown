@@ -97,6 +97,9 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\old\XSample.MarkDownSharp.XA\BusinessLogicObjects\BusinessLogicObject.cs">
+      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="FirstViewController.cs" />

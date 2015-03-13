@@ -96,9 +96,9 @@ namespace MarkdownSharp
 	/// Markdown allows you to write using an easy-to-read, easy-to-write plain text format, 
 	/// then convert it to structurally valid XHTML (or HTML).
 	/// </summary>
-	public class Markdown
+	public partial class Markdown
 	{
-		private void ConfigurationMAnagerAppSettings()
+		private void ConfigurationManagerAppSettings()
 		{
 			var settings = ConfigurationManager.AppSettings;
 			foreach (string key in settings.Keys)

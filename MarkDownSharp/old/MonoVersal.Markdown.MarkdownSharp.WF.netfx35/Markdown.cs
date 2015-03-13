@@ -131,7 +131,7 @@ namespace MarkdownSharp
     /// Markdown allows you to write using an easy-to-read, easy-to-write plain text format, 
     /// then convert it to structurally valid XHTML (or HTML).
     /// </summary>
-    public class Markdown
+    public partial class Markdown
     {
         private const string _version = "1.13";
 
@@ -160,9 +160,10 @@ namespace MarkdownSharp
         {
             if (!loadOptionsFromConfigFile) return;
 
-			ConfigurationMAnagerAppSettings();
+			ConfigurationManagerAppSettings();
         }
 
+		//partial void ConfigurationManagerAppSettings();
 
         /// <summary>
         /// Create a new Markdown instance and set the options from the MarkdownOptions object.

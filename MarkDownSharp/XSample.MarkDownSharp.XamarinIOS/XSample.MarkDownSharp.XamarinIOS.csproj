@@ -113,6 +113,9 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\old\XSample.MarkDownSharp.XA\BusinessLogicObjects\BusinessLogicObject.cs">
+      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="FirstViewController.cs" />
@@ -126,7 +129,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\old\MonoVersal.Markdown.MarkdownSharp.XamarinIOS\MonoVersal.Markdown.MarkdownSharp.XamarinIOS.csproj">
+    <ProjectReference Include="..\MonoVersal.Markdown.MarkdownSharp.XamarinIOS\MonoVersal.Markdown.MarkdownSharp.XamarinIOS.csproj">
       <Project>{0FCB53E1-55B6-468F-9F26-3AD1CE64AD8F}</Project>
       <Name>MonoVersal.Markdown.MarkdownSharp.XamarinIOS</Name>
     </ProjectReference>
