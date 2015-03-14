@@ -12,18 +12,18 @@ icons:
   - content/icons/MarkDownSharp_512x512.png
 libraries:
   ios:
-    - content/lib/ios/MarkDownSharp.iOS.dll
+    - content/lib/ios/MonoVersal.Markdown.MarkdownSharp.XamarinIOS.Classic.dll
   ios-unified: 
-    - content/lib/ios-unified/MarkDownSharp.iOS.dll
+    - content/lib/ios-unified/MonoVersal.Markdown.MarkdownSharp.XamarinIOS.dll
   android:
-    - content/lib/android/MarkDownSharp.Android.dll
+    - content/lib/android/MonoVersal.Markdown.MarkdownSharp.XamarinAndroid.dll
 samples:
   - name: "Android Sample"
-    path: content/samples/XSample.MarkDownSharp.XA/XSample.MarkDownSharp.XA.sln
-    configuration: "Release|iPhone"
+    path: content/samples/Sample.XamarinAndroid.sln
+    configuration: "Release"
   - name: "iOS Unified Sample"
-    path: content/samples/XSample.MarkDownSharp.XI/NewSample-MarkdownSharp.sln
+    path: content/samples/Sample.XamarinIOS.sln
     configuration: "Release|iPhone"
   - name: "iOS Classic Sample"
-    path: content/samples/XSample.MarkDownSharp.XI-Classic/NewSample-MarkdownSharp-Classic.sln
+    path: content/samples/Sample.XamarinIOS.Classic.sln
     configuration: "Release|iPhone"
