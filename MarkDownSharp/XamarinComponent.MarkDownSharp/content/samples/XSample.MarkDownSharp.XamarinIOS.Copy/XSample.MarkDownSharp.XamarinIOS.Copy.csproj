@@ -9,6 +9,8 @@
     <RootNamespace>XSample.MarkDownSharp.XamarinIOS.Copy</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>XSampleMarkDownSharpXamarinIOSCopy</AssemblyName>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -91,6 +93,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="MonoVersal.Markdown.MarkdownSharp.XamarinIOS">
+      <HintPath>..\..\lib\ios-unified\MonoVersal.Markdown.MarkdownSharp.XamarinIOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
@@ -98,75 +103,40 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
-    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\FlipsideViewController.xib">
-      <Link>FlipsideViewController.xib</Link>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MainViewController_iPad.xib">
-      <Link>MainViewController_iPad.xib</Link>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MainViewController_iPhone.xib">
-      <Link>MainViewController_iPhone.xib</Link>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MarkUpController_iPad.xib">
-      <Link>MarkUpController_iPad.xib</Link>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="..\old\XSample.MarkDownSharp.XI\MarkUpController_iPhone.xib">
-      <Link>MarkUpController_iPhone.xib</Link>
-    </InterfaceDefinition>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Info.plist" />
-    <None Include="Entitlements.plist" />
     <None Include="original-project-items\Info.plist" />
     <None Include="original-project-items\AppDelegate.cs" />
     <None Include="original-project-items\Main.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\old\XSample.MarkDownSharp.XA\BusinessLogicObjects\BusinessLogicObject.cs">
-      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\AppDelegate.cs">
-      <Link>AppDelegate.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\FlipsideViewController.cs">
-      <Link>FlipsideViewController.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\FlipsideViewController.designer.cs">
-      <DependentUpon>FlipsideViewController.cs</DependentUpon>
-      <Link>FlipsideViewController.designer.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\Main.cs">
-      <Link>Main.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\MainViewController.cs">
-      <Link>MainViewController.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\MainViewController.designer.cs">
-      <DependentUpon>MainViewController.cs</DependentUpon>
-      <Link>MainViewController.designer.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\MarkUpController.cs">
-      <Link>MarkUpController.cs</Link>
-    </Compile>
-    <Compile Include="..\old\XSample.MarkDownSharp.XI\MarkUpController.designer.cs">
-      <DependentUpon>MarkUpController.cs</DependentUpon>
-      <Link>MarkUpController.designer.cs</Link>
-    </Compile>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\old\MonoVersal.Markdown.MarkdownSharp.XamarinIOS\MonoVersal.Markdown.MarkdownSharp.XamarinIOS.csproj">
-      <Project>{0FCB53E1-55B6-468F-9F26-3AD1CE64AD8F}</Project>
-      <Name>MonoVersal.Markdown.MarkdownSharp.XamarinIOS</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup>
     <Folder Include="original-project-items\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\old\XSample.MarkDownSharp.XI\Info.plist">
-      <Link>Info.plist</Link>
-    </Content>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="BusinessLogicObjects\BusinessLogicObject.cs" />
+    <Compile Include="FlipsideViewController.cs" />
+    <Compile Include="FlipsideViewController.designer.cs">
+      <DependentUpon>FlipsideViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkUpController.cs" />
+    <Compile Include="MarkUpController.designer.cs">
+      <DependentUpon>MarkUpController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="FlipsideViewController.xib" />
+    <InterfaceDefinition Include="MainViewController_iPad.xib" />
+    <InterfaceDefinition Include="MainViewController_iPhone.xib" />
+    <InterfaceDefinition Include="MarkUpController_iPad.xib" />
+    <InterfaceDefinition Include="MarkUpController_iPhone.xib" />
   </ItemGroup>
 </Project>
