@@ -35,17 +35,19 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="MonoVersal.Markdown.MarkdownSharp.XamarinAndroid">
+      <HintPath>..\..\lib\android\MonoVersal.Markdown.MarkdownSharp.XamarinAndroid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\old\XSample.MarkDownSharp.XA\BusinessLogicObjects\BusinessLogicObject.cs">
-      <Link>BusinessLogicObjects\BusinessLogicObject.cs</Link>
-    </Compile>
+    <Compile Include="BusinessLogicObjects\BusinessLogicObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ActivityMarkDown.cs" />
     <Compile Include="ActivityMarkUp.cs" />
@@ -68,16 +70,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\MonoVersal.Markdown.MarkdownSharp.XamarinAndroid\MonoVersal.Markdown.MarkdownSharp.XamarinAndroid.csproj">
-      <Project>{849F197C-A05E-476E-852D-9AACB0B47CB5}</Project>
-      <Name>MonoVersal.Markdown.MarkdownSharp.XamarinAndroid</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\Layout\" />
-    <Folder Include="BusinessLogicObjects\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
